@@ -1,3 +1,10 @@
+#Memoization Algo
+#1)Check if Cache table is not empty -->Return it
+#2)If empty and base case--->store the base case and return it
+#3)If empty and not base --->recurse the subproblems
+#4)Finally update the Cache table and return
+
+
 fib_cache={}
 def NFiboDP(n):
     
