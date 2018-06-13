@@ -14,14 +14,14 @@ def NFiboDP(n):
     
     #Compute Nth Fibonacci
     if n==1:
-        value=0
+        result=0
     elif n==2:
-        value=1
+        result=1
     elif n>2:
-        value=NFiboDP(n-1)+NFiboDP(n-2)
+        result=NFiboDP(n-1)+NFiboDP(n-2)
     #Cache the Value and return
-    fib_cache[n]=value
-    return value
+    fib_cache[n]=result
+    return result
 
     #Fibonacci N Numbers
 for n in range(1,1001):
